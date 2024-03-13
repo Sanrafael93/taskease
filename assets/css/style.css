@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --blue:#3544ca; 
+    --gray: #363C54;
+    --white: #FFFFFF;
+    --teal: #FA8475;
+    --purple: #B3c2f9;
+}
+
+body{
+    font-family: 'Space Grotesk, serif';
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+header nav ul {
+    font-family: 'Inter';
+    color: var(--gray);
+    list-style: none;
+    display: inline-flex;
+    font-weight: 500;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+header button {
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 10px;
+    font-weight: 600;
+}
+
+main{
+    font-family: 'space Grotesk';
+    color: var(--gray);
+    background-color: lightgrey;
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    padding-top: 2%; 
+}
+
+main h1 {
+    font-weight: bolder;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main p {
+    text-align: center; 
+    font-weight: 500;
+}
+
+main > div button {
+    border-radius: 20px;
+    padding: 15px 3%;
+    font-size: medium;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+main > div button:first-child {
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+main > div button:last-child{
+    border-color: var(--gray);
+    background-color: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+main article h1 > span {
+    color: var(--teal);
+}
+
+.lets-icons--video-fill {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.783 7.99l5.644 3.136a1 1 0 0 1 0 1.748l-5.644 3.136A1.2 1.2 0 0 1 9 14.96V9.04a1.2 1.2 0 0 1 1.783-1.05' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
